@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 from typing import Tuple, List
 
+"""Function"""
+
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """mypy for type checking"""
     zoomed_in: List = [
         item for item in lst
         for i in range(factor)
