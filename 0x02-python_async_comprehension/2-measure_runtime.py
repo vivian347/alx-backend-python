@@ -4,11 +4,12 @@
 
 import asyncio
 import time
+from typing import Generator
 
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime():
+async def measure_runtime() -> Generator[float, None, None]:
     """execute async_comprehension four times in
     parallel using asyncio.gather."""
     start_time = time.time()
